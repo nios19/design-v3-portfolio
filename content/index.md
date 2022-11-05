@@ -3,9 +3,15 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
-==========================
+<article>
+<div class="article-image">
+<img src="%assets_url%/img/me10.jpg" alt="A photo of me">
+</div>
 
-The source for this page is in `content/index.md`.
-
-This is a sample home page written in markdown with some frontmatter defined.
+<div class="article-text">
+<h2>Hejsan!</h2>
+<p>Mitt namn är Nils och jag läser första åter på programmet Webbprogrammering på BTH.
+Denna webbplats är skapad i utbilningssyfte och förhoppningsvis kommer den efter
+avslutad kurs att se betydligt bättre ut än idag.</p>
+</div>
+</article>
