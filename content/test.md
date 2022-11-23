@@ -1,7 +1,7 @@
----
+<!-- ---
 Title: Test
 Description: This is our test page.
----
+--- -->
 
 Home page
 ==========================

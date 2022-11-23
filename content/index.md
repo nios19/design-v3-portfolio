@@ -1,5 +1,5 @@
 ---
-Title: Home
+Title: Hem
 Description: This is our index page.
 ---
 
@@ -10,7 +10,7 @@ Description: This is our index page.
 
 <div class="article-text">
 <h2>Hejsan!</h2>
-<p>Mitt namn är Nils och jag läser första åter på programmet Webbprogrammering på BTH.
+<p>Nils heter jag och jag läser första åter på programmet Webbprogrammering på BTH.
 Denna webbplats är skapad i utbilningssyfte och förhoppningsvis kommer den efter
 avslutad kurs att se betydligt bättre ut än idag.</p>
 </div>
