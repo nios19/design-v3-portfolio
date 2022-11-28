@@ -93,7 +93,7 @@ a {
     background-color: var(--light-grey);
 }
 
-.wrapper-960 {
+.w960 {
     max-width: 960px;
     margin: 0 auto;
 }

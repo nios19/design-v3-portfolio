@@ -1,0 +1,236 @@
+// style.scss
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+@import 'variables';
+@import 'mobile_menu';
+@import 'blockquotes';
+@import 'code';
+
+@import 'report';
+@import 'technologies';
+@import 'technology';
+
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: $color-dark-grey;
+    text-decoration: none;
+}
+
+.header,
+.footer {
+    padding: 1em;
+}
+
+.header {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    /* line-height: normal; */
+    background-color: $color-white;
+    border-bottom: 4px solid $color-red;
+
+    .site-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .site-header .logo {
+        width: 6.25em;
+        min-width: 3em;
+        margin-right: 1em;
+    }
+    
+    .site-header .logo img {
+        display: block;
+        border-radius: 50%;
+    }
+
+    .site-header .title a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 3em;
+        letter-spacing: 0.25em;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .nav {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+
+    padding: 3em;
+    background-color: $color-light-grey;
+}
+
+.w-960 {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    margin: 2em 0;
+    padding: 2em;
+    background-color: $color-white;
+    border-top: 2px solid $color-red;
+
+    .article-image {
+        flex: 1;
+    }
+
+    .article-text {
+        flex: 2;
+        margin-left: 2em;
+    }
+}
+
+.footer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $color-light-grey;
+    background-color: $color-mid-grey;
+
+    .social a {
+        color: $color-light-grey;
+        font-size: 2rem;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    color: $color-mid-grey;
+}
+
+p,
+td,
+th,
+li,
+dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* REPSPONSIVENESS */
+
+@media (max-width: 1023px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        padding: 1em;
+    }
+
+    article {
+        flex-direction: column;
+
+        .article-text {
+            margin: 1em 0;
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        .site-header {
+            .logo {
+                width: 1.5em;
+            }
+
+            .title h1 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    article {
+        padding: 1em;
+    }
+}
